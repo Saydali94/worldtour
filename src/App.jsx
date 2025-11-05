@@ -9,8 +9,18 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/all/:type" element={<AllItemsPage />} />
+
+
+
+
+
+
+      
     </Routes>
   );
 }
+
+
+
 
 export default App;
