@@ -6,15 +6,6 @@ const AdminLayout = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(true);
-
-
-
-
-
-
-
-  
-
   // 🔹 Sidebar menyular ro‘yxati
   const menuItems = [
     { title: "Dashboard", path: "/admin/dashboard" },
