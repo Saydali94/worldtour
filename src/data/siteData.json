@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "title": "Explore the World with Altours",
+    "subtitle": "Find your dream destinations and unforgettable experiences.",
+    "background": "/assets/hero.jpg"
+  },
+  "theme": {
+    "primaryColor": "#2563eb",
+    "backgroundLight": "#ffffff",
+    "backgroundDark": "#0b1a37"
+  }
+}

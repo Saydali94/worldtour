@@ -1,0 +1,161 @@
+/* ===============================
+   🌐 GLOBAL STYLE SYSTEM
+   Altours Travel Website
+   =============================== */
+
+/* === 1. BODY & ROOT === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Inter", "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Root container */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === 2. LINKS & BUTTONS === */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #2563eb; /* blue-600 */
+}
+
+/* Button base */
+button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* === 3. HEADER / NAVBAR === */
+header {
+  width: 100%;
+}
+
+.topbar {
+  background-color: #001b44;
+  color: white;
+  font-size: 0.9rem;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  z-index: 50;
+}
+
+.navbar {
+  position: fixed;
+  top: 45px; /* below topbar */
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  z-index: 40;
+}
+
+.navbar.scrolled {
+  background-color: #0a2a8f;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar links */
+.nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #60a5fa; /* blue-400 */
+}
+
+/* === 4. HERO SECTION === */
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin-left: 4rem;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+/* === 5. FOOTER === */
+footer {
+  background-color: #001b44;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* === 6. RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero-content {
+    margin-left: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1.25rem;
+  }
+}
